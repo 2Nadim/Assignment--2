@@ -1,0 +1,322 @@
+body {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+
+    font-family: 'Edu QLD Beginner', cursive;
+
+    font-family: 'Poppins', sans-serif;
+    background-color: gray;
+}
+
+main {
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----1st part----- */
+.flexible-container {
+    display: flex;
+    width: 1200px;
+    padding: 30px;
+    margin-top: 21px;
+    margin-left: 30px;
+    background: #161616;
+    border-radius: 30px;
+}
+
+.half-width {
+    width: 50%;
+    padding-left: 106px;
+    color: white;
+
+}
+
+.half-width img {
+    width: 100%;
+
+}
+
+p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.watch-button {
+    text-decoration: none;
+    background-color: red;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+
+}
+
+h1 {
+    font-size: 60px;
+}
+
+/*----- 2nd part---- */
+.video-section {
+    display: flex;
+    width: 1200px;
+    padding: 30px;
+    margin-top: 21px;
+    margin-left: 30px;
+    border-radius: 30px;
+    background-color: white;
+    margin-bottom: 50px;
+
+}
+
+.watch-menu {
+    background-color: #161616;
+    margin-top: 100px;
+    border-radius: 10px;
+
+}
+
+.menu-item {
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    background-color: white;
+}
+
+.watch-menu {
+    width: 25%;
+    height: 220px;
+
+}
+
+.video-play {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+button {
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.icons {
+    display: flex;
+}
+
+.icon {
+    padding-left: 50px;
+}
+
+.extra-button {
+    visibility: hidden;
+
+    background-color: red;
+}
+
+/*------- 3rd part ------*/
+
+.goal-items {
+    background-color: #161616;
+    padding-top: 80px;
+}
+
+.goal {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+hr {
+
+    width: 50%;
+    border: 1px solid gray;
+}
+
+nav {
+    padding-bottom: 120px;
+    padding-top: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    padding: 0 10px;
+
+}
+
+nav li {
+    list-style: none;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 30px;
+    color: white;
+}
+
+
+/* -----------------------------
+------------------------------
+        media querey
+-----------------------------
+----------------------------*/
+/* ------tablet devices----- */
+@media only screen and (min-width:689px) and (max-width:991px) {
+
+    /* ----1st part--- */
+    .flexible-container {
+        display: flex;
+        width: 85%;
+        background-color: blueviolet;
+        border-radius: 30px;
+    }
+
+    .half-width {
+        padding-left: 50px;
+        width: 100%;
+
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .half-width img {
+        width: 100%;
+    }
+
+    /* -----2nd part----- */
+    .video-section {
+        display: block;
+        width: 85%;
+
+    }
+
+    .watch-menu {
+        display: inline;
+        width: 100%;
+    }
+
+    .menu-item {
+        justify-content: center;
+        display: inline;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 2px solid gray;
+        background-color: white;
+
+    }
+
+    .video-play {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .extra-button {
+        visibility: visible;
+        text-align: center;
+        margin-left: 50%;
+        padding: 5px 15px;
+        font-size: 30px;
+        background-color: red;
+        border-radius: 10px;
+    }
+
+    /* ----3rd part--- */
+
+    nav ul {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav li {
+        margin-top: 20px;
+    }
+}
+
+
+/* ----------mobile devices-------- */
+@media only screen and (max-width:688px) {
+
+    /* --1st part-- */
+    .flexible-container {
+        background-color: blue;
+        width: 75%;
+        display: grid;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .half-width {
+        display: grid;
+        flex-direction: column;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    p {
+        padding-right: 13px;
+
+    }
+
+    /* 2nd part */
+
+    .video-section {
+        width: 70%;
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .watch-menu {
+        width: 100%;
+        background-color: aqua;
+        margin-top: 30px;
+    }
+
+    .menu-item a {
+        align-items: center;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .video-play {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .panding-video img {
+        width: 100%;
+    }
+
+    /* ----3rd part----- */
+
+    nav ul {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav li {
+        margin-top: 20px;
+    }
+
+}
